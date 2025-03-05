@@ -43,9 +43,9 @@ describe ('app-settings environment reader', () => {
             let result = getEnvironmentVariables(prefix, slotName, environmentSettings);
 
             const variableIndex = result.findIndex(r => r.name === 'SLOTAPPSETTING');
-            const slotType = result[variableIndex].value
+            const value = result[variableIndex].value
 
-            expect(slotType).toBe('value');
+            expect(value).toBe('value');
         });
 
         test('should exclude settings where slot name does not match', () => {
@@ -109,9 +109,9 @@ describe ('app-settings environment reader', () => {
             let result = getEnvironmentVariables(prefix, slotName, environmentSettings);
 
             const variableIndex = result.findIndex(r => r.name === 'SLOTAPPSETTING');
-            const slotType = result[variableIndex].value
+            const value = result[variableIndex].value
 
-            expect(slotType).toBe('value');
+            expect(value).toBe('value');
         });
 
         test('should exclude settings where slot name does not match', () => {
