@@ -35,7 +35,7 @@ export default (prefix: string | undefined, slotName: string, input?: any): Arra
         if (!envSlotName || envSlotName.toUpperCase() === slotName.toUpperCase()) {
             environmentValues.push({
                 name: keyName,
-                value: rawObject[keyName],
+                value: rawObject[key],
                 type: isRemoval ? 'REMOVE' : isSlot ? 'SLOT' : 'ADD'
             });
         }
