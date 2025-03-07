@@ -89,7 +89,7 @@ When you are wanting to remove a setting from an App Service you may apply the `
 
 
 ### Slot settings
-When you are wanting to set a slot setting appsetting you may apply the `SLOT_{SLOTNAME}` prefix to an environment variable matching the naem of the appsetting and it will be applied as a slot setting only regardless of what the configuration template setting is as long as the slot name matches that of the workflow.
+When you are wanting to set a slot setting appsetting you may apply the `SLOT_{SLOTNAME}` prefix to an environment variable matching the name of the appsetting and it will be applied as a slot setting only regardless of what the configuration template setting is as long as the slot name matches that of the workflow.
 * Example
   ```
   env:
@@ -107,6 +107,18 @@ When you are wanting to set a slot setting appsetting you may apply the `SLOT_{S
       file: './configuration.template.json'
       appname: 'web-app'
       slotname: 'staging'
+  ```
+
+If you are using a prefix and slot settings make sure that the prefix is in front of the slot naming:
+* Example
+  ```
+  env:
+      APPSETTING_SLOT_STAGING_APPLICATIONINSIGHTS_INSTRUMENTATIONKEY = "ffffffff-ffff-ffff-ffff-fffffffffffff"
+  with:
+      file: './configuration.template.json'
+      appname: 'web-app'
+      slotname: 'staging'
+      prefix: 'APPSETTING'
   ```
 
 ## Sample
