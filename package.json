@@ -16,7 +16,7 @@
     "action",
     "utility"
   ],
-  "author": "Josh Rogers <josh.rogers@catchco.com>",
+  "author": "Lucas Engel <lucas.engel@engellucas.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/joshlrogers/az-appsettings-from-env/issues"

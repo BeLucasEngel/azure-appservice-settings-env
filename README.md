@@ -134,7 +134,7 @@ jobs:
               with:
                 creds: '${{ secrets.AZURE_CREDENTIALS }}
 
-            - uses: catchco/azure-appservice-settings-env@latest
+            - uses: BeLucasEngel/azure-appservice-settings-env@latest
               with:
                 file: 'configuration.template.json'
                 appname: 'web-app'
