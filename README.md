@@ -1,3 +1,5 @@
+This is an updated version of [catchco/azure-appservice-settings-env](https://github.com/catchco/azure-appservice-settings-env).
+
 # GitHub action for configuring Azure App services from environment variables
 
 This action is heavily influenced by Microsoft's App Service Settings action [here](https://github.com/Azure/appservice-settings).  
