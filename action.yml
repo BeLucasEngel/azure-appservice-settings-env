@@ -1,4 +1,4 @@
-name: "Azure App Service Settings from Environment"
+name: "Set Azure App Service Settings from Environment"
 description: "Update Azure App Service settings file from environment variables"
 inputs:
   file:
